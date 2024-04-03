@@ -325,9 +325,7 @@ def pdf_process_characters(pageno, line, lineelem, scaler):
 
 
 def pdf_page_to_hocr_page(page, page_metadata, pageno=None):
-    flgs = fitz.TEXT_INHIBIT_SPACES | \
-            fitz.TEXT_PRESERVE_LIGATURES | \
-            fitz.TEXT_PRESERVE_IMAGES
+    flgs = TEXT_INHIBIT_SPACES
 
     # This would be nice, but it does mess with the bbox of the text, so better
     # not for now, until we do more research
